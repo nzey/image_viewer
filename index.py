@@ -25,3 +25,9 @@ def index():
     </body>
     </html>
   '''
+
+@app.route('/img', methods=['POST'])
+def imgSubmitted():
+  f = request.files['image']
+  f.save('uploaded_file')
+  return send_file('uploaded_file', mimetype='image/gif')
