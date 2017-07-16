@@ -1,5 +1,5 @@
 # image_viewer
-[![Build Status][2]][3]
+ [![Build Status][2]][3] 
 
 A mini python flask project ([deployed here][1]). Upload an image to view in browser.
 
@@ -48,7 +48,7 @@ pytest
 
 
 [1]:https://fathomless-brushlands-41511.herokuapp.com
-[2]:https://travis-ci.org/nzey/image_viewer
+[2]:https://travis-ci.org/nzey/image_viewer.svg?branch=master
 [3]:https://travis-ci.org/nzey/image_viewer
 [5]:https://virtualenv.pypa.io/en/stable/installation/
 [6]:http://localhost:5000
