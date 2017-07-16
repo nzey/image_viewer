@@ -1,5 +1,7 @@
 import sys
-sys.path.append('/Users/nzey/devprojects/challenges/photo_loader')
+import os
+ROOT = os.path.abspath(__file__)[0:-len('test/test_index.py')]
+sys.path.append(os.path.join(ROOT, 'image_viewer'))
 from index import app
 
 def test_img_post():
