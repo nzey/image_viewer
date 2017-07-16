@@ -8,9 +8,9 @@ a mini python flask project
 - python 3.6
 - flask
 
-# to test
+# test
 In shell: `pytest`
 
-# to run
-In shell: `export FLASK_APP=image_viewer/index.py && flask run`
-open browser to http://localhost:5000
+# run
+1) In shell: `export FLASK_APP=image_viewer/index.py && flask run`
+2) open browser to http://localhost:5000
