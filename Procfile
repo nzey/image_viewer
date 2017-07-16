@@ -1,1 +1,1 @@
-web: gunicorn index:app --log-level debug
+web: gunicorn imageviewer.index:app --log-level debug
