@@ -45,10 +45,34 @@ In shell, from project root:
 ```
 pytest
 ```
+# basic contributing instructions 
+(does not go into details of merging and branching)
+1) Fork repo from [github.com/nzey/image_viewer][4]
+2) `git clone [your_fork_url]`
+3) `git remote add upstream https://github.com/nzey/image_viewer`
+4) Make your changes locally
+5) Pull from upstream (in case changes have been made since you cloned) and merge with your local changes
+6) test locally (`pytest`)
+7) Git add, commit and push to your own fork (`git push origin master`)
+8) Submit pull request (will trigger Travis CI build)
 
+# connect Travis (already done for this repo)
+1) Go to [travis-ci.org][7] ([travis-ci.com][8] for private repos)
+2) Click on 'Sign in with GitHub' in the top right
+3) When account is done syncing, go to https://travis-ci.org/profile/YOUR_GITHUB_HANDLE (if not taken there automatically)
+4) To activate Travis for a repository, click on the X next to the repo you want to connect
+5) Add .travis.yml file to your repository
+- see this project's [yml][9] for a simple example
+- see Travis [python specific documentation][10] for more complex examples and additional information
+6) Git add, commit, and push with new yml file to your github repo. Check back on your Travis profile page to see build status
 
 [1]:https://fathomless-brushlands-41511.herokuapp.com
 [2]:https://travis-ci.org/nzey/image_viewer.svg?branch=master
 [3]:https://travis-ci.org/nzey/image_viewer
+[4]:https://github.com/nzey/image_viewer
 [5]:https://virtualenv.pypa.io/en/stable/installation/
 [6]:http://localhost:5000
+[7]:https://travis-ci.org/
+[8]:https://travis-ci.com/
+[9]:.travis.yml
+[10]:https://docs.travis-ci.com/user/languages/python/
