@@ -1,7 +1,7 @@
 import sys
 import os
 ROOT = os.path.abspath(__file__)[0:-len('test/test_index.py')]
-sys.path.append(os.path.join(ROOT, 'image_viewer'))
+sys.path.append(ROOT)
 from index import app
 
 def test_img_post():
