@@ -1,9 +1,6 @@
-from flask import Flask, send_file
-from flask import request
-
-app = Flask(__name__)
-
+from flask import Flask, request, send_file
 import json
+app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
@@ -30,4 +27,4 @@ def index():
 def imgSubmitted():
   f = request.files['image']
   f.save('uploaded_file')
-  return send_file('uploaded_file', mimetype='image/gif')
+  return send_file('uploaded_file', mimetype=f.mimetype)
