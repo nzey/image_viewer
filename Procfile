@@ -1,1 +1,1 @@
-web: gunicorn --pythonpath image_viewer index:app
+web: gunicorn --pythonpath 'image_viewer' index:app
