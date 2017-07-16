@@ -1,6 +1,9 @@
 # photo_loader
 a mini python flask project
 
+# build status
+[![Build Status](https://travis-ci.com/nzey/photo_loader.svg?token=hs3nHzpSFSHJCaWMmmbs&branch=master)](https://travis-ci.com/nzey/photo_loader)
+
 # dependencies
 - python 3.6
 - flask
