@@ -5,7 +5,7 @@ a mini python flask project
 [![Build Status](https://travis-ci.com/nzey/image_viewer.svg?token=hs3nHzpSFSHJCaWMmmbs&branch=master)](https://travis-ci.com/nzey/image_viewer)
 
 # dependencies
-- python 3.6
+- python 2.7.13
 - flask
 
 # test
