@@ -31,7 +31,7 @@ pip install -r requirements.txt
 ```
 5) From project root:  
   ```
-  export FLASK_APP=index.py && flask run
+  export FLASK_APP=imageviewer/index.py && flask run
   ```
 6) Open browser to [http://localhost:5000][6]
 
