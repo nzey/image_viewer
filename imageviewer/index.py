@@ -1,5 +1,5 @@
 from flask import Flask, request, send_file, render_template
-from tempfile import TemporaryFile
+from tempfile import NamedTemporaryFile
 
 app = Flask(__name__)
 
@@ -9,11 +9,10 @@ def index():
 
 @app.route('/img', methods=['POST'])
 def imgSubmitted():
-  temp = TemporaryFile(suffix='.jpg')
-  f = request.files['image']
-  f.save(temp)
-  temp.seek(0)
-  response = send_file(temp, mimetype=f.mimetype)
-  f.close
-  temp.close
-  return response
+  with NamedTemporaryFile() as temp:
+    f = request.files['image']
+    mimetype = f.mimetype
+    f.save(temp)
+    f.close
+    temp.seek(0)
+    return send_file(temp.name, mimetype=mimetype)
