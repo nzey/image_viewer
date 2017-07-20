@@ -1,0 +1,2 @@
+include imageviewer/templates/*.html
+include imageviewer/index.py

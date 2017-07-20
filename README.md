@@ -11,33 +11,14 @@ A mini-Python/Flask project with continuous integration testing and deployment. 
 
 Complete the following tasks from the command line:
 
-1) Install python version and package manager [virtualenv][5]:
-```
-[sudo] pip install virtualenv
-```
-2) Create a virtualenv named *venv*:**
-```
-virtualenv venv
-```
-** *if you choose a different environment name, be sure to add the name to the .gitignore file in the virtualenv section.*
+In shell, from project root:
+1)  ```python setup.py install```
+2) ```start```
+3) Open browser to [http://localhost:5000][6]
 
-3) Activate your new environment:
-```
-source activate venv
-```
-4) Install dependencies:
-```
-pip install -r requirements.txt
-```
-5) From project root:  
-  ```
-  export FLASK_APP=imageviewer/index.py && flask run
-  ```
-6) Open browser to [http://localhost:5000][6]
-
-7) After changes to source code, restart server:
+4) After changes to source code, restart server:
   - ctrl-c
-  - re-run step 5 command
+  - ```start```
   - refresh browser window
 
 # test

@@ -1,5 +1,6 @@
 from flask import Flask, request, send_file, render_template
 from tempfile import NamedTemporaryFile
+import os 
 
 app = Flask(__name__)
 
@@ -16,3 +17,8 @@ def imgSubmitted():
     f.close
     temp.seek(0)
     return send_file(temp.name, mimetype=mimetype)
+
+def server():
+  print('SERVER START SCRIPT RUN -------------------------')
+  os.environ["FLASK_APP"]='imageviewer/index.py'
+  os.system('flask run')
