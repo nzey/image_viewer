@@ -1,8 +1,11 @@
 import sys
 import os
-ROOT = os.path.abspath(__file__)[0:-len('test/test_index.py')]
-sys.path.append(ROOT)
+# print('sys path without append ', sys.path)
+# ROOT = os.path.abspath(__file__)[0:-len('test/test_index.py')]
+# sys.path.append(ROOT)
 from imageviewer.index import app
+
+
 
 def test_img_post():
   "HTTP response data is the file sent with HTTP request"
