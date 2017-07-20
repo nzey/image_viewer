@@ -19,6 +19,5 @@ def imgSubmitted():
     return send_file(temp.name, mimetype=mimetype)
 
 def server():
-  print('SERVER START SCRIPT RUN -------------------------')
   os.environ["FLASK_APP"]='imageviewer/index.py'
   os.system('flask run')

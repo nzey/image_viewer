@@ -12,8 +12,8 @@ A mini-Python/Flask project with continuous integration testing and deployment. 
 Complete the following tasks from the command line:
 
 In shell, from project root:
-1)  ```python setup.py install```
-2) ```start```
+1) `python setup.py install`
+2) `start`
 3) Open browser to [http://localhost:5000][6]
 
 4) After changes to source code, restart server:
